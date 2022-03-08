@@ -8,13 +8,13 @@ cursor = connection.cursor()
 
 # executing a query
 # Explaning: This query go to create a table people if this don't exist.
-cursor.execute("CREATE TABLE IF NOT EXISTS people (name TEXT, amount INTEGER, kind TEXT)")
+cursor.execute("CREATE TABLE IF NOT EXISTS people (name TEXT, ammount INTEGER, kind TEXT)")
 
-## TOSEARCH: is amount a integer in real life? Which kind of problem there is when we are using the float type for money transactions?
+## TOSEARCH: is ammount a integer in real life? Which kind of problem there is when we are using the float type for money transactions?
 
 # Executing other queries
 # Explaning: These queries go include a new rows into people table.
-cursor.execute("INSERT INTO people (name, amount, kind) VALUES ('Billy', 1000000, 'Universitary')")
+cursor.execute("INSERT INTO people (name, ammount, kind) VALUES ('Billy', 1000000, 'Universitary')")
 # cursor.execute("INSERT INTO people VALUES ('Gusta Analise', 100, 'Business')")
 # cursor.execute("INSERT INTO people VALUES ('Gusta Analise', 100, 'Business')")
 # cursor.execute("INSERT INTO people VALUES ('Gusta Analise', 100, 'Business')")
